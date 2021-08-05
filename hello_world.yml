@@ -1,7 +1,6 @@
-- name: Hello World Sample
-  hosts: all
+---
+- name: Check connectivity to remote servers
+  hosts: all #servergroup01
   tasks:
-    - name: Hello Message
-      debug:
-        msg: "Hello World!"
-
+    - name: ping
+      ping:
