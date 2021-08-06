@@ -1,0 +1,8 @@
+---
+- name: Check connectivity to remote servers
+  hosts: djamel 
+  tasks:
+    - name: ping
+      ping:
+    - name: Download file test
+      get_url: url=https://p4.wallpaperbetter.com/wallpaper/500/442/354/outrun-vaporwave-hd-wallpaper-preview.jpg dest=home/Emir/Desktop/jpgimage.jpg
